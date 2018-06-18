@@ -1,0 +1,258 @@
+{
+  "data": [{
+    "date": "2017-06-01",
+    "usercount": 13,
+    "project": "SuperIT",
+    "module": "SDE首页"
+  },{
+    "date": "2017-06-01",
+    "usercount": 9,
+    "project": "SuperIT",
+    "module": "SDE监控"
+  },{
+    "date": "2017-06-01",
+    "usercount": 8,
+    "project": "SuperIT",
+    "module": "SDE告警"
+  },{
+    "date": "2017-06-01",
+    "usercount": 10,
+    "project": "SuperIT",
+    "module": "SDE服务响应"
+  },{
+    "date": "2017-06-01",
+    "usercount": 13,
+    "project": "SuperIT",
+    "module": "SDE看板首页"
+  },{
+    "date": "2017-06-01",
+    "usercount": 11,
+    "project": "SuperIT",
+    "module": "SDE看板监控"
+  },{
+    "date": "2017-06-01",
+    "usercount": 8,
+    "project": "SuperIT",
+    "module": "SDE看板SDN大网"
+  },{
+    "date": "2017-06-01",
+    "usercount": 9,
+    "project": "SuperIT",
+    "module": "SDE看板告警"
+  },{
+    "date": "2017-06-01",
+    "usercount": 10,
+    "project": "SuperIT",
+    "module": "SDE看板服务响应"
+  },{
+    "date": "2017-06-01",
+    "usercount": 7,
+    "project": "SuperEnvMall",
+    "module": "环境预定"
+  },{
+    "date": "2017-06-01",
+    "usercount": 8,
+    "project": "SuperEnvMall",
+    "module": "环境搜索"
+  },{
+    "date": "2017-06-01",
+    "usercount": 7,
+    "project": "SuperEnvMall",
+    "module": "环境详情"
+  },{
+    "date": "2017-06-01",
+    "usercount": 8,
+    "project": "SuperEnvMall",
+    "module": "环境组网"
+  },{
+    "date": "2017-06-01",
+    "usercount": 4,
+    "project": "SuperLAB",
+    "module": "MAS-SDN"
+  },{
+    "date": "2017-06-01",
+    "usercount": 16,
+    "project": "SuperLAB",
+    "module": "物料管理"
+  },{
+    "date": "2017-06-01",
+    "usercount": 14,
+    "project": "SuperLAB",
+    "module": "环境管理"
+  },{
+    "date": "2017-06-01",
+    "usercount": 10,
+    "project": "SuperLAB",
+    "module": "利用率统计"
+  },{
+    "date": "2017-06-02",
+    "usercount": 15,
+    "project": "SuperIT",
+    "module": "SDE首页"
+  },{
+    "date": "2017-06-02",
+    "usercount": 6,
+    "project": "SuperIT",
+    "module": "SDE监控"
+  },{
+    "date": "2017-06-02",
+    "usercount": 10,
+    "project": "SuperIT",
+    "module": "SDE告警"
+  },{
+    "date": "2017-06-02",
+    "usercount": 13,
+    "project": "SuperIT",
+    "module": "SDE服务响应"
+  },{
+    "date": "2017-06-02",
+    "usercount": 20,
+    "project": "SuperIT",
+    "module": "SDE看板首页"
+  },{
+    "date": "2017-06-02",
+    "usercount": 12,
+    "project": "SuperIT",
+    "module": "SDE看板监控"
+  },{
+    "date": "2017-06-02",
+    "usercount": 7,
+    "project": "SuperIT",
+    "module": "SDE看板SDN大网"
+  },{
+    "date": "2017-06-02",
+    "usercount": 15,
+    "project": "SuperIT",
+    "module": "SDE看板告警"
+  },{
+    "date": "2017-06-02",
+    "usercount": 18,
+    "project": "SuperIT",
+    "module": "SDE看板服务响应"
+  },{
+    "date": "2017-06-02",
+    "usercount": 10,
+    "project": "SuperEnvMall",
+    "module": "环境预定"
+  },{
+    "date": "2017-06-02",
+    "usercount": 11,
+    "project": "SuperEnvMall",
+    "module": "环境搜索"
+  },{
+    "date": "2017-06-02",
+    "usercount": 9,
+    "project": "SuperEnvMall",
+    "module": "环境详情"
+  },{
+    "date": "2017-06-02",
+    "usercount": 14,
+    "project": "SuperEnvMall",
+    "module": "环境组网"
+  },{
+    "date": "2017-06-02",
+    "usercount": 8,
+    "project": "SuperLAB",
+    "module": "MAS-SDN"
+  },{
+    "date": "2017-06-02",
+    "usercount": 26,
+    "project": "SuperLAB",
+    "module": "物料管理"
+  },{
+    "date": "2017-06-02",
+    "usercount": 24,
+    "project": "SuperLAB",
+    "module": "环境管理"
+  },{
+    "date": "2017-06-02",
+    "usercount": 17,
+    "project": "SuperLAB",
+    "module": "利用率统计"
+  },{
+    "date": "2017-06-03",
+    "usercount": 14,
+    "project": "SuperIT",
+    "module": "SDE首页"
+  },{
+    "date": "2017-06-03",
+    "usercount": 4,
+    "project": "SuperIT",
+    "module": "SDE监控"
+  },{
+    "date": "2017-06-03",
+    "usercount": 9,
+    "project": "SuperIT",
+    "module": "SDE告警"
+  },{
+    "date": "2017-06-03",
+    "usercount": 11,
+    "project": "SuperIT",
+    "module": "SDE服务响应"
+  },{
+    "date": "2017-06-03",
+    "usercount": 17,
+    "project": "SuperIT",
+    "module": "SDE看板首页"
+  },{
+    "date": "2017-06-03",
+    "usercount": 11,
+    "project": "SuperIT",
+    "module": "SDE看板监控"
+  },{
+    "date": "2017-06-03",
+    "usercount": 7,
+    "project": "SuperIT",
+    "module": "SDE看板SDN大网"
+  },{
+    "date": "2017-06-03",
+    "usercount": 13,
+    "project": "SuperIT",
+    "module": "SDE看板告警"
+  },{
+    "date": "2017-06-03",
+    "usercount": 16,
+    "project": "SuperIT",
+    "module": "SDE看板服务响应"
+  },{
+    "date": "2017-06-03",
+    "usercount": 12,
+    "project": "SuperEnvMall",
+    "module": "环境预定"
+  },{
+    "date": "2017-06-03",
+    "usercount": 14,
+    "project": "SuperEnvMall",
+    "module": "环境搜索"
+  },{
+    "date": "2017-06-03",
+    "usercount": 12,
+    "project": "SuperEnvMall",
+    "module": "环境详情"
+  },{
+    "date": "2017-06-03",
+    "usercount": 17,
+    "project": "SuperEnvMall",
+    "module": "环境组网"
+  },{
+    "date": "2017-06-03",
+    "usercount": 10,
+    "project": "SuperLAB",
+    "module": "MAS-SDN"
+  },{
+    "date": "2017-06-03",
+    "usercount": 24,
+    "project": "SuperLAB",
+    "module": "物料管理"
+  },{
+    "date": "2017-06-03",
+    "usercount": 22,
+    "project": "SuperLAB",
+    "module": "环境管理"
+  },{
+    "date": "2017-06-03",
+    "usercount": 17,
+    "project": "SuperLAB",
+    "module": "利用率统计"
+  }]
+}

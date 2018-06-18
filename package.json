@@ -1,0 +1,28 @@
+{
+  "name": "super-tool-server",
+  "version": "1.0.0",
+  "description": "server for super-tool",
+  "scripts": {
+    "start": "node --harmony app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igonglei/super-tool-server.git"
+  },
+  "keywords": [],
+  "author": "gonglei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igonglei/super-tool-server/issues"
+  },
+  "homepage": "https://github.com/igonglei/super-tool-server#readme",
+  "dependencies": {
+    "@koa/cors": "^2.2.1",
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-compress": "^3.0.0",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.3"
+  }
+}
