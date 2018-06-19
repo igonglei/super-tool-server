@@ -27,9 +27,10 @@ app.use(indexRoutes.routes()).use(indexRoutes.allowedMethods())
 
 app.use(compress())
 
-app.listen(PORT, async () => {
+db.connect(config.mongoUri)
+
+app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`)
-  await db.connect(config.mongoUri)
 })
 
 module.exports = app

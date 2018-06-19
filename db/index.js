@@ -1,10 +1,9 @@
 const mongoose = require('mongoose')
 
-const connect = async uri => {
-  await mongoose.connect(uri).then(
+const connect = uri => {
+  mongoose.connect(uri).then(
     () => {
-      console.log(this)
-      console.log('Database connected')
+      console.log(`Database connected at ${uri}`)
     },
     err => {
       console.log(`Database connect error: ${err.message}`)
