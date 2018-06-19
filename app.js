@@ -7,7 +7,9 @@ const compress = require('koa-compress')
 const indexRoutes = require('./routes/index')
 const logRoutes = require('./routes/log')
 const visitRoutes = require('./routes/visit')
-const PORT = 3000
+const config = require('./config/index')
+const PORT = config.port
+const db = require('./db/index')
 
 const app = new Koa()
 
@@ -23,17 +25,11 @@ app.use(indexRoutes.routes()).use(indexRoutes.allowedMethods())
   .use(logRoutes.routes()).use(logRoutes.allowedMethods())
   .use(visitRoutes.routes()).use(visitRoutes.allowedMethods())
 
-app.use(async ctx => {
-  ctx.body = {
-    code: 200,
-    msg: 'ok'
-  }
-})
-
 app.use(compress())
 
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   console.log(`Server listening on port ${PORT}`)
+  await db.connect(config.mongoUri)
 })
 
 module.exports = app
