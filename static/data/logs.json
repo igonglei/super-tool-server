@@ -1,102 +1,18 @@
-{
-  "SuperEnvMall.Server": [
-    {
-      "time": "2017-04-06 16:17:25",
-      "level": 0,
-      "ip": "10.22.149.44",
-      "message": "服务启动成功:http://10.22.149.44:11200/SuperEnvMall.Server"
-    },
-    {
-      "time": "2017-04-06 16:17:24",
-      "level": 0,
-      "ip": "10.22.149.44",
-      "message": "WallE.Host初始化..."
-    },
-    {
-      "time": "2017-04-06 16:17:20",
-      "level": 2,
-      "ip": "10.22.149.44",
-      "message": "[GetLinksByDeviceID]can not connect to mongodb"
-    },
-    {
-      "time": "2017-04-06 16:17:10",
-      "level": 1,
-      "ip": "10.22.149.44",
-      "message": "lcm agent is busy"
-    },
-    {
-      "time": "2017-04-06 16:16:55",
-      "level": 2,
-      "ip": "10.22.149.44",
-      "message": "GetSearchGoods:can not connect to mongodb"
-    },
-    {
-      "time": "2017-04-06 16:16:50",
-      "level": 2,
-      "ip": "10.22.149.44",
-      "message": "GetSingleGoods:can not connect to mongodb"
-    },
-    {
-      "time": "2017-04-06 16:16:48",
-      "level": 2,
-      "ip": "10.22.149.44",
-      "message": "[GetNetwork]can not connect to mongodb"
-    },
-    {
-      "time": "2017-04-06 16:16:44",
-      "level": 0,
-      "ip": "10.22.149.44",
-      "message": "apply successful"
-    },
-    {
-      "time": "2017-04-06 16:16:38",
-      "level": 0,
-      "ip": "10.22.149.44",
-      "message": "服务启动成功:http://10.22.149.44:11200/SuperEnvMall.Server"
-    },
-    {
-      "time": "2017-04-06 16:16:36",
-      "level": 0,
-      "ip": "10.22.149.44",
-      "message": "WallE.Host初始化..."
-    },
-    {
-      "time": "2017-04-06 16:16:32",
-      "level": 1,
-      "ip": "10.22.149.44",
-      "message": "[GetLinksByDeviceID]can not connect to mongodb"
-    },
-    {
-      "time": "2017-04-06 16:16:27",
-      "level": 0,
-      "ip": "10.22.149.44",
-      "message": "[GetNetwork]can not connect to mongodb"
-    }
-  ],
-  "SuperIT.Server": [
-    {
-      "time": "2017-04-06 16:20:00",
-      "level": 0,
-      "ip": "10.22.149.205",
-      "message": "廊坊环境和设备利用率缓存成功!"
-    },
-    {
-      "time": "2017-04-06 16:18:10",
-      "level": 0,
-      "ip": "10.22.149.205",
-      "message": "廊坊环境和设备利用率开始缓存..."
-    },
-    {
-      "time": "2017-04-06 16:18:00",
-      "level": 0,
-      "ip": "10.22.149.205",
-      "message": "武汉环境和设备利用率缓存成功!"
-    },
-    {
-      "time": "2017-04-06 16:16:10",
-      "level": 0,
-      "ip": "10.22.149.205",
-      "message": "武汉环境和设备利用率开始缓存..."
-    }
-  ]
-}
+[
+{ "_id" : { "$oid" : "5b29feda685a51415c837882" }, "type" : "SuperEnvMall.Server", "time" : "2017-04-06 16:17:25", "level" : 0, "ip" : "10.22.149.44", "message" : "服务启动成功:http://10.22.149.44:11200/SuperEnvMall.Server" },
+{ "_id" : { "$oid" : "5b29feda685a51415c837883" }, "type" : "SuperEnvMall.Server", "time" : "2017-04-06 16:17:24", "level" : 0, "ip" : "10.22.149.44", "message" : "WallE.Host初始化..." },
+{ "_id" : { "$oid" : "5b29feda685a51415c837884" }, "type" : "SuperEnvMall.Server", "time" : "2017-04-06 16:17:20", "level" : 2, "ip" : "10.22.149.44", "message" : "[GetLinksByDeviceID]can not connect to mongodb" },
+{ "_id" : { "$oid" : "5b29feda685a51415c837885" }, "type" : "SuperEnvMall.Server", "time" : "2017-04-06 16:17:10", "level" : 1, "ip" : "10.22.149.44", "message" : "lcm agent is busy" },
+{ "_id" : { "$oid" : "5b29feda685a51415c837886" }, "type" : "SuperEnvMall.Server", "time" : "2017-04-06 16:16:55", "level" : 2, "ip" : "10.22.149.44", "message" : "GetSearchGoods:can not connect to mongodb" },
+{ "_id" : { "$oid" : "5b29feda685a51415c837887" }, "type" : "SuperEnvMall.Server", "time" : "2017-04-06 16:16:50", "level" : 2, "ip" : "10.22.149.44", "message" : "GetSingleGoods:can not connect to mongodb" },
+{ "_id" : { "$oid" : "5b29feda685a51415c837888" }, "type" : "SuperEnvMall.Server", "time" : "2017-04-06 16:16:48", "level" : 2, "ip" : "10.22.149.44", "message" : "[GetNetwork]can not connect to mongodb" },
+{ "_id" : { "$oid" : "5b29feda685a51415c837889" }, "type" : "SuperEnvMall.Server", "time" : "2017-04-06 16:16:44", "level" : 0, "ip" : "10.22.149.44", "message" : "apply successful" },
+{ "_id" : { "$oid" : "5b29feda685a51415c83788a" }, "type" : "SuperEnvMall.Server", "time" : "2017-04-06 16:16:38", "level" : 0, "ip" : "10.22.149.44", "message" : "服务启动成功:http://10.22.149.44:11200/SuperEnvMall.Server" },
+{ "_id" : { "$oid" : "5b29feda685a51415c83788b" }, "type" : "SuperEnvMall.Server", "time" : "2017-04-06 16:16:36", "level" : 0, "ip" : "10.22.149.44", "message" : "WallE.Host初始化..." },
+{ "_id" : { "$oid" : "5b29feda685a51415c83788c" }, "type" : "SuperEnvMall.Server", "time" : "2017-04-06 16:16:32", "level" : 1, "ip" : "10.22.149.44", "message" : "[GetLinksByDeviceID]can not connect to mongodb" },
+{ "_id" : { "$oid" : "5b29feda685a51415c83788d" }, "type" : "SuperEnvMall.Server", "time" : "2017-04-06 16:16:27", "level" : 0, "ip" : "10.22.149.44", "message" : "[GetNetwork]can not connect to mongodb" },
+{ "_id" : { "$oid" : "5b29feda685a51415c83788e" }, "type" : "SuperIT.Server", "time" : "2017-04-06 16:20:00", "level" : 0, "ip" : "10.22.149.205", "message" : "廊坊环境和设备利用率缓存成功!" },
+{ "_id" : { "$oid" : "5b29feda685a51415c83788f" }, "type" : "SuperIT.Server", "time" : "2017-04-06 16:18:10", "level" : 0, "ip" : "10.22.149.205", "message" : "廊坊环境和设备利用率开始缓存..." },
+{ "_id" : { "$oid" : "5b29feda685a51415c837890" }, "type" : "SuperIT.Server", "time" : "2017-04-06 16:18:00", "level" : 0, "ip" : "10.22.149.205", "message" : "武汉环境和设备利用率缓存成功!" },
+{ "_id" : { "$oid" : "5b29feda685a51415c837891" }, "type" : "SuperIT.Server", "time" : "2017-04-06 16:16:10", "level" : 0, "ip" : "10.22.149.205", "message" : "武汉环境和设备利用率开始缓存..." }
+]

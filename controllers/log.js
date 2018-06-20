@@ -5,8 +5,11 @@ const getLogsFromFile = async() => {
   return JSON.parse(await utils.readFile(utils.resolvePath('static/data/logs.json'), 'utf8'))
 }
 
-const getLogs = async() => {
-  return await logModel.find()
+const getLogs = async params => {
+  return {
+    rows: await logModel.find(params.query, params.projection, params.option),
+    total: await logModel.count(params.query)
+  }
 }
 
 module.exports = {
