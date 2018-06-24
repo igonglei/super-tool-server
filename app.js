@@ -4,8 +4,10 @@ const Koa = require('koa')
 const logger = require('koa-logger')
 const cors = require('@koa/cors')
 const serve = require('koa-static')
+const views = require('koa-views')
 const bodyParser = require('koa-bodyparser')
 const compress = require('koa-compress')
+const favicon = require('koa-favicon')
 const indexRoutes = require('./routes/index')
 const logRoutes = require('./routes/log')
 const visitRoutes = require('./routes/visit')
@@ -20,6 +22,12 @@ app.use(logger())
 app.use(cors())
 
 app.use(serve(__dirname + '/static'))
+
+app.use(favicon(__dirname + '/static/favicon.ico'))
+
+app.use(views(__dirname + '/views', {
+  extension: 'ejs'
+}))
 
 app.use(bodyParser())
 

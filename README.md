@@ -1,6 +1,6 @@
 # SuperTool-Server
 
-> 基于Vue.js的辅助运维工具
+> 基于Koa+MongoDB的SuperTool后端服务
 
 ## 预览
 
@@ -9,14 +9,12 @@
 ## 技术栈
 
 - Koa
+- Koa-views
 - Koa-router
+- EJS
 - Mongoose
-- Koa-static
-- Koa-logger
-- @Koa/cors
-- Koa-bodyparser
-- Koa-compress
 - ES6
+- async/await
 
 ## 项目结构
 ```
@@ -37,7 +35,10 @@
 │   └── visit.js
 ├── utils
 │   └── index.js
+├── views
+│   └── index.ejs
 ├── static
+│   ├── favicon.ico
 │   └── data
 │       ├── logs.json
 │       └── visits.json
