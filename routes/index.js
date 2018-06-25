@@ -6,14 +6,18 @@ router.get('/', async ctx => {
   let api = [{
     path: '/logs',
     type: 'POST',
-    params: JSON.stringify({ query: {}, projection: '', options: {} })
+    params: JSON.stringify({ query: {}, projection: '', options: {} }),
+    desc: 'get server logs'
   }, {
     path: '/visits',
     type: 'POST',
-    params: JSON.stringify({ query: {} })
+    params: JSON.stringify({ query: {} }),
+    desc: 'get user visits'
   }]
-  ctx.state = { title: 'Api', api }
-  await ctx.render('index')
+  await ctx.render('index', {
+    title: 'API',
+    api
+  })
 })
 
 module.exports = router

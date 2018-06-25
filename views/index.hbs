@@ -1,31 +1,20 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-    <title>{{title}} - SuperTool</title>
-    <link rel="shortcut icon" href="favicon.ico">
-  </head>
-  <body>
-    <h1>Api list</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Path</th>
-          <th>Type</th>
-          <th>Params</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each api}}
-          <tr>
-            {{#each this}}
-              <td>{{this}}</td>
-            {{/each}}
-          </tr>
+<h1>API List</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Path</th>
+      <th>Type</th>
+      <th>Params</th>
+      <th>Desc</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each api}}
+      <tr>
+        {{#each this}}
+          <td>{{this}}</td>
         {{/each}}
-      </tbody>
-    </table>
-  </body>
-</html>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

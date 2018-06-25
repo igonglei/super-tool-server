@@ -9,8 +9,8 @@
 ## 技术栈
 
 - Koa
-- Koa-views
 - Koa-router
+- Koa-hbs
 - Handlebars.js
 - Mongoose
 - ES6
@@ -36,7 +36,8 @@
 ├── utils
 │   └── index.js
 ├── views
-│   └── index.ejs
+│   ├── index.hbs
+│   └── layout.hbs
 ├── static
 │   ├── favicon.ico
 │   └── data

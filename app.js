@@ -4,7 +4,7 @@ const Koa = require('koa')
 const logger = require('koa-logger')
 const cors = require('@koa/cors')
 const serve = require('koa-static')
-const views = require('koa-views')
+const hbs = require('koa-hbs')
 const bodyParser = require('koa-bodyparser')
 const compress = require('koa-compress')
 const favicon = require('koa-favicon')
@@ -25,9 +25,9 @@ app.use(serve(__dirname + '/static'))
 
 app.use(favicon(__dirname + '/static/favicon.ico'))
 
-app.use(views(__dirname + '/views', {
-  extension: 'hbs',
-  map: { hbs: 'handlebars' }
+app.use(hbs.middleware({
+  viewPath: __dirname + '/views',
+  defaultLayout: 'layout'
 }))
 
 app.use(bodyParser())
