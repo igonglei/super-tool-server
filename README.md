@@ -11,7 +11,7 @@
 - Koa
 - Koa-views
 - Koa-router
-- EJS
+- Handlebars.js
 - Mongoose
 - ES6
 - async/await

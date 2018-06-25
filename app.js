@@ -26,7 +26,8 @@ app.use(serve(__dirname + '/static'))
 app.use(favicon(__dirname + '/static/favicon.ico'))
 
 app.use(views(__dirname + '/views', {
-  extension: 'ejs'
+  extension: 'hbs',
+  map: { hbs: 'handlebars' }
 }))
 
 app.use(bodyParser())
