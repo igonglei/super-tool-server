@@ -40,6 +40,9 @@
 │   └── layout.hbs
 ├── static
 │   ├── favicon.ico
+│   ├── css
+│   │   ├── base.css
+│   │   └── index.css
 │   └── data
 │       ├── logs.json
 │       └── visits.json
