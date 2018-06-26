@@ -11,4 +11,12 @@ router.post('/visits', async ctx => {
   }
 })
 
+router.get('/visitsfromfile', async ctx => {
+  try {
+    ctx.body = await visitController.getVisitsFromFile()
+  } catch (err) {
+    ctx.throw(400, err.message)
+  }
+})
+
 module.exports = router

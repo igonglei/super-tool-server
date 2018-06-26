@@ -11,4 +11,12 @@ router.post('/logs', async ctx => {
   }
 })
 
+router.get('/logsfromfile', async ctx => {
+  try {
+    ctx.body = await logController.getLogsFromFile()
+  } catch (err) {
+    ctx.throw(400, err.message)
+  }
+})
+
 module.exports = router
