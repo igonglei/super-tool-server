@@ -1,6 +1,7 @@
 'use strict'
 
 const Koa = require('koa')
+const onerror = require('koa-onerror')
 const logger = require('koa-logger')
 const cors = require('@koa/cors')
 const serve = require('koa-static')
@@ -16,6 +17,8 @@ const PORT = config.port
 const db = require('./db/index')
 
 const app = new Koa()
+
+onerror(app)
 
 app.use(logger())
 

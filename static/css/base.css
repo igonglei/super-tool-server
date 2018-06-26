@@ -1,0 +1,50 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+.container {
+  height: 100%;
+  padding: 0 30px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #e9eaec;
+}
+
+table th, table td {
+  border-left: 1px solid #e9eaec;
+  border-top: 1px solid #e9eaec;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+table th {
+  height: 40px;
+  background-color: #f8f8f9;
+}
+
+table td {
+  padding: 15px;
+}
+
+table tr:hover {
+  background-color: #ebf7ff;
+}

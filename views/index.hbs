@@ -1,5 +1,9 @@
-<h1>API List</h1>
-<table>
+{{#contentFor "head"}}
+  <link rel="stylesheet" href="css/index.css">
+{{/contentFor}}
+
+<h2 class="content-title">API List</h2>
+<table class="content-body">
   <thead>
     <tr>
       <th>Path</th>
@@ -12,8 +16,12 @@
     {{#each api}}
       <tr>
         {{#each this}}
-          <td>{{this}}</td>
+          <td class="{{@key}}">{{this}}</td>
         {{/each}}
+      </tr>
+    {{else}}
+      <tr>
+        <td colspan="4">No content</td>
       </tr>
     {{/each}}
   </tbody>
