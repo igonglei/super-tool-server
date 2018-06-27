@@ -3,6 +3,12 @@ const Router = require('koa-router')
 const router = new Router()
 
 router.get('/', async ctx => {
+  await ctx.render('swagger', {
+    title: 'API'
+  })
+})
+
+router.get('/api', async ctx => {
   let api = [{
     path: '/logs',
     type: 'POST',

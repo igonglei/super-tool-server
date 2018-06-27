@@ -13,6 +13,7 @@
 - Koa-hbs
 - Handlebars.js
 - Mongoose
+- Swagger UI
 - ES6
 - async/await
 
@@ -37,12 +38,14 @@
 │   └── index.js
 ├── views
 │   ├── index.hbs
-│   └── layout.hbs
+│   ├── layout.hbs
+│   └── swagger.hbs
 ├── static
 │   ├── favicon.ico
 │   ├── css
 │   │   ├── base.css
 │   │   └── index.css
+│   ├── swagger
 │   └── data
 │       ├── logs.json
 │       └── visits.json

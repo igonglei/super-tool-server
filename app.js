@@ -13,7 +13,7 @@ const indexRoutes = require('./routes/index')
 const logRoutes = require('./routes/log')
 const visitRoutes = require('./routes/visit')
 const config = require('./config/index')
-const PORT = config.port
+const { port, mongoUri } = config
 const db = require('./db/index')
 
 const app = new Koa()
@@ -41,10 +41,10 @@ app.use(indexRoutes.routes()).use(indexRoutes.allowedMethods())
 
 app.use(compress())
 
-db.connect(config.mongoUri)
+db.connect(mongoUri)
 
-app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`)
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`)
 })
 
 module.exports = app

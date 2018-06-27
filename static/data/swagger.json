@@ -1,0 +1,138 @@
+{
+  "swagger": "2.0",
+  "info":
+  {
+    "description": "Restful server for super-tool.",
+    "version": "1.0.0",
+    "title": "API List"
+  },
+  "paths":
+  {
+    "/logs":
+    {
+      "post":
+      {
+        "tags": ["log"],
+        "summary": "Get server logs from mongodb",
+        "description": "",
+        "operationId": "postLogs",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+        {
+          "in": "body",
+          "name": "body",
+          "description": "",
+          "required": true,
+          "schema":
+          {
+            "$ref": "#/definitions/Log"
+          }
+        }],
+        "responses":
+        {
+          "405":
+          {
+            "description": "Invalid input"
+          }
+        }
+      }
+    },
+    "/logsfromfile":
+    {
+      "get":
+      {
+        "tags": ["log"],
+        "summary": "Get server logs from json file",
+        "description": "",
+        "operationId": "getLogs",
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses":
+        {
+        }
+      }
+    },
+    "/visits":
+    {
+      "post":
+      {
+        "tags": ["visit"],
+        "summary": "Get user visits from mongodb",
+        "description": "",
+        "operationId": "postVisits",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+        {
+          "in": "body",
+          "name": "body",
+          "description": "",
+          "required": true,
+          "schema":
+          {
+            "$ref": "#/definitions/Visit"
+          }
+        }],
+        "responses":
+        {
+          "405":
+          {
+            "description": "Invalid input"
+          }
+        }
+      }
+    },
+    "/visitsfromfile":
+    {
+      "get":
+      {
+        "tags": ["visit"],
+        "summary": "Get user visits from json file",
+        "description": "",
+        "operationId": "getVisits",
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses":
+        {
+        }
+      }
+    }
+  },
+  "definitions":
+  {
+    "Log":
+    {
+      "type": "object",
+      "required": [],
+      "properties":
+      {
+        "query":
+        {
+          "type": "object"
+        },
+        "projection":
+        {
+          "type": "string",
+          "example": ""
+        },
+        "option":
+        {
+          "type": "object"
+        }
+      }
+    },
+    "Visit":
+    {
+      "type": "object",
+      "required": [],
+      "properties":
+      {
+        "query":
+        {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

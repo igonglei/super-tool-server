@@ -6,3 +6,30 @@
 .content-body {
   width: 800px;
 }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #e9eaec;
+}
+
+table th, table td {
+  border-left: 1px solid #e9eaec;
+  border-top: 1px solid #e9eaec;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+table th {
+  height: 40px;
+  background-color: #f8f8f9;
+}
+
+table td {
+  padding: 15px;
+}
+
+table tr:hover {
+  background-color: #ebf7ff;
+}
