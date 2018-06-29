@@ -10,91 +10,134 @@
   {
     "/logs":
     {
-      "post":
+      "get":
       {
         "tags": ["log"],
         "summary": "Get server logs from mongodb",
         "description": "",
-        "operationId": "postLogs",
-        "consumes": ["application/json"],
+        "operationId": "getLogs",
         "produces": ["application/json"],
         "parameters": [
         {
-          "in": "body",
-          "name": "body",
-          "description": "",
-          "required": true,
-          "schema":
+          "name": "query",
+          "in": "query",
+          "description": "query for logs collection",
+          "required": false,
+          "type": "object"
+        },
+        {
+          "name": "projection",
+          "in": "query",
+          "description": "projection for query result",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "page",
+          "in": "query",
+          "description": "current page",
+          "required": false,
+          "type": "integer",
+          "minimum": 1,
+          "format": "int32"
+        },
+        {
+          "name": "size",
+          "in": "query",
+          "description": "page size",
+          "required": false,
+          "type": "integer",
+          "minimum": 1,
+          "format": "int32"
+        },
+        {
+          "name": "sort",
+          "in": "query",
+          "description": "sort key",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "order",
+          "in": "query",
+          "description": "order",
+          "required": false,
+          "type": "array",
+          "items":
           {
-            "$ref": "#/definitions/Log"
+            "type": "string",
+            "enum": [
+              "asc",
+              "desc"
+            ]
           }
         }],
         "responses":
         {
+          "200":
+          {
+            "description": "successful operation",
+            "schema":
+            {
+              "type": "object",
+              "properties":
+              {
+                "rows":
+                {
+                  "type": "array",
+                  "items":
+                  {
+                    "$ref": "#/definitions/Log"
+                  }
+                },
+                "total":
+                {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
           "405":
           {
             "description": "Invalid input"
           }
-        }
-      }
-    },
-    "/logsfromfile":
-    {
-      "get":
-      {
-        "tags": ["log"],
-        "summary": "Get server logs from json file",
-        "description": "",
-        "operationId": "getLogs",
-        "produces": ["application/json"],
-        "parameters": [],
-        "responses":
-        {
         }
       }
     },
     "/visits":
     {
-      "post":
+      "get":
       {
         "tags": ["visit"],
         "summary": "Get user visits from mongodb",
         "description": "",
-        "operationId": "postVisits",
-        "consumes": ["application/json"],
+        "operationId": "getVisits",
         "produces": ["application/json"],
         "parameters": [
         {
-          "in": "body",
-          "name": "body",
-          "description": "",
-          "required": true,
-          "schema":
-          {
-            "$ref": "#/definitions/Visit"
-          }
+          "name": "query",
+          "in": "query",
+          "description": "query for visits collection",
+          "required": false,
+          "type": "object"
         }],
         "responses":
         {
+          "200":
+          {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Visit"
+              }
+            }
+          },
           "405":
           {
             "description": "Invalid input"
           }
-        }
-      }
-    },
-    "/visitsfromfile":
-    {
-      "get":
-      {
-        "tags": ["visit"],
-        "summary": "Get user visits from json file",
-        "description": "",
-        "operationId": "getVisits",
-        "produces": ["application/json"],
-        "parameters": [],
-        "responses":
-        {
         }
       }
     }
@@ -104,33 +147,60 @@
     "Log":
     {
       "type": "object",
-      "required": [],
       "properties":
       {
-        "query":
+        "_id":
         {
-          "type": "object"
+          "type": "string"
         },
-        "projection":
+        "type":
         {
           "type": "string",
-          "example": ""
         },
-        "option":
+        "time":
         {
-          "type": "object"
+          "type": "string"
+        },
+        "level":
+        {
+          "type": "integer",
+          "format": "int64"
+        },
+        "ip":
+        {
+          "type": "string",
+        },
+        "message":
+        {
+          "type": "string"
         }
       }
     },
     "Visit":
     {
       "type": "object",
-      "required": [],
       "properties":
       {
-        "query":
+        "_id":
         {
-          "type": "object"
+          "type": "string"
+        },
+        "date":
+        {
+          "type": "string",
+        },
+        "module":
+        {
+          "type": "string"
+        },
+        "project":
+        {
+          "type": "string",
+        },
+        "usercount":
+        {
+          "type": "integer",
+          "format": "int64"
         }
       }
     }

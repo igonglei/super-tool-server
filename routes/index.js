@@ -11,8 +11,8 @@ router.get('/', async ctx => {
 router.get('/api', async ctx => {
   let api = [{
     path: '/logs',
-    type: 'POST',
-    params: JSON.stringify({ query: {}, projection: '', options: {} }),
+    type: 'GET',
+    params: JSON.stringify({ query: {}, projection: '', page: 1, size: 10, sort: '', order: '' }),
     desc: 'get server logs from mongodb'
   }, {
     path: '/logsfromfile',
@@ -21,7 +21,7 @@ router.get('/api', async ctx => {
     desc: 'get server logs from json file'
   }, {
     path: '/visits',
-    type: 'POST',
+    type: 'GET',
     params: JSON.stringify({ query: {} }),
     desc: 'get user visits from mongodb'
   }, {

@@ -6,7 +6,7 @@ const getVisitsFromFile = async () => {
 }
 
 const getVisits = async params => {
-  return await visitModel.find(params.query)
+  return await visitModel.find(JSON.parse(params.query || '{}'))
 }
 
 module.exports = {

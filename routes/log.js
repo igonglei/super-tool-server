@@ -3,9 +3,9 @@ const logController = require('../controllers/log')
 
 const router = new Router()
 
-router.post('/logs', async ctx => {
+router.get('/logs', async ctx => {
   try {
-    ctx.body = await logController.getLogs(ctx.request.body)
+    ctx.body = await logController.getLogs(ctx.query)
   } catch (err) {
     ctx.throw(400, err.message)
   }

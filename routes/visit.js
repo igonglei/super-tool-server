@@ -3,9 +3,9 @@ const visitController = require('../controllers/visit')
 
 const router = new Router()
 
-router.post('/visits', async ctx => {
+router.get('/visits', async ctx => {
   try {
-    ctx.body = await visitController.getVisits(ctx.request.body)
+    ctx.body = await visitController.getVisits(ctx.query)
   } catch (err) {
     ctx.throw(400, err.message)
   }

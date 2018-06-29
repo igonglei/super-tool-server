@@ -6,9 +6,15 @@ const getLogsFromFile = async () => {
 }
 
 const getLogs = async params => {
+  let { query, projection, page, size, sort, order } = params
+  query = JSON.parse(query || '{}')
+  page = parseInt(page || 0)
+  let limit = parseInt(size || 0)
+  let skip = (page - 1) * limit
+  let sortOption = (sort && order) ? { [sort]: order } : {}
   return {
-    rows: await logModel.find(params.query, params.projection, params.option),
-    total: await logModel.count(params.query)
+    rows: await logModel.find(query, projection, { sort: sortOption, limit, skip }),
+    total: await logModel.count(query)
   }
 }
 
