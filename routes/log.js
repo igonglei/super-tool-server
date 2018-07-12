@@ -19,4 +19,28 @@ router.get('/logsfromfile', async ctx => {
   }
 })
 
+router.post('/logs', async ctx => {
+  try {
+    ctx.body = await logController.addLogs(ctx.request.body)
+  } catch (err) {
+    ctx.throw(400, err.message)
+  }
+})
+
+router.put('/logs', async ctx => {
+  try {
+    ctx.body = await logController.updateLogs(ctx.request.body)
+  } catch (err) {
+    ctx.throw(400, err.message)
+  }
+})
+
+router.del('/logs/:id', async ctx => {
+  try {
+    ctx.body = await logController.deleteLogs(ctx.params.id)
+  } catch (err) {
+    ctx.throw(400, err.message)
+  }
+})
+
 module.exports = router

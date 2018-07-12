@@ -9,11 +9,11 @@ const hbs = require('koa-hbs')
 const bodyParser = require('koa-bodyparser')
 const compress = require('koa-compress')
 const favicon = require('koa-favicon')
-const indexRoutes = require('./routes/index')
-const logRoutes = require('./routes/log')
-const visitRoutes = require('./routes/visit')
 const config = require('./config/index')
-const { port, mongoUri } = config
+const { port, mongoUri, prefix } = config
+const indexRoutes = require('./routes/index')
+const logRoutes = require('./routes/log').prefix(prefix)
+const visitRoutes = require('./routes/visit').prefix(prefix)
 const db = require('./db/index')
 
 const app = new Koa()
