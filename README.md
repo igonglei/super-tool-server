@@ -2,9 +2,7 @@
 
 > 基于Koa+MongoDB的SuperTool后端服务
 
-## 前端
-
-### 前端地址[super-tool](https://github.com/igonglei/super-tool)
+### 前端地址[SuperTool](https://github.com/igonglei/super-tool)
 
 ## 预览
 
@@ -23,6 +21,28 @@
 - Swagger UI
 - ES6
 - async/await
+
+## 项目配置
+
+```
+const config = {
+  development: {
+    port: 3000,
+    mongoUri: 'mongodb://localhost:30000/supertool-dev',
+    prefix: '/api/v1'
+  },
+  production: {
+    port: 3000,
+    mongoUri: 'mongodb://localhost:30000/supertool',
+    prefix: '/api/v1'
+  }
+}
+```
+
+## MongoDB
+
+- 数据库请按照mongoUri配置
+- 导入static\data目录下的logs.json和visits.json文件，表名同文件名
 
 ## 项目结构
 ```
